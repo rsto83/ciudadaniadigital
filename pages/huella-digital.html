@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huella Digital</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>👣 Huella Digital</h1>
+  <p>Lo que hago en Internet deja marcas</p>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="seguridad-digital.html">Seguridad</a></li>
+    <li><a href="redes-sociales.html">Redes Sociales</a></li>
+    <li><a href="privacidad.html">Privacidad</a></li>
+    <li><a href="ciberbullying.html">Ciberbullying</a></li>
+    <li><a href="huella-digital.html">Huella Digital</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section class="card">
+
+  <h2>👣 Bienvenidos a conocer tu huella digital</h2>
+
+  <img src="../img/huella1.jpg" alt="Huella digital en internet">
+
+  <p>
+    Hoy usamos Internet para muchas cosas: jugar, aprender, buscar información,
+    mirar videos o hablar con amigos. Cada vez que usamos un celular, una tablet
+    o una computadora, dejamos información en Internet.
+  </p>
+
+  <p>
+    Esa información que dejamos se llama <strong>huella digital</strong>.
+  </p>
+
+  <p>
+    Así como cuando caminamos en la arena dejamos huellas, en Internet también
+    dejamos marcas que pueden permanecer mucho tiempo.
+  </p>
+
+  <hr>
+
+  <h3>👣 ¿Qué es la huella digital?</h3>
+
+  <p>
+    La huella digital es toda la información que dejamos en Internet cuando usamos dispositivos.
+  </p>
+
+  <ul>
+    <li>Subir una foto</li>
+    <li>Escribir un comentario</li>
+    <li>Dar “me gusta”</li>
+    <li>Registrarse en juegos</li>
+    <li>Buscar información</li>
+  </ul>
+
+  <img src="../img/presentacion1.jpg" alt="Concepto de huella digital">
+
+  <hr>
+
+  <!-- 🔥 NUEVA ESTRUCTURA TIPO “EXCEL” -->
+  <div class="huella-grid">
+
+    <div class="activa-titulo">
+      <h3>🟢 Huella digital activa</h3>
+    </div>
+
+    <div class="pasiva-titulo">
+      <h3>🔵 Huella digital pasiva</h3>
+    </div>
+
+    <div class="activa-texto">
+      <p>Es lo que decides compartir: fotos, comentarios, videos o publicaciones.</p>
+    </div>
+
+    <div class="pasiva-texto">
+      <p>Es la información que se guarda sin que lo notes: visitas, clics o tiempo en sitios.</p>
+    </div>
+
+    <div class="imagen">
+      <img src="../img/activa-pasiva.jpg" alt="Huella activa y pasiva">
+    </div>
+
+  </div>
+
+  <hr>
+
+  <h3>📱 Lo que dejo en Internet</h3>
+
+  <img src="../img/internet-acciones.jpg" alt="Acciones en internet">
+
+  <ul>
+    <li>📷 Fotos</li>
+    <li>🎥 Videos</li>
+    <li>💬 Comentarios</li>
+    <li>👍 Reacciones</li>
+    <li>🧾 Datos</li>
+    <li>🎮 Juegos</li>
+    <li>📍 Ubicación</li>
+  </ul>
+
+  <hr>
+
+  <h3>⚠️ Riesgos en Internet</h3>
+
+  <img src="../img/riesgos1.jpg" alt="Riesgos en internet">
+
+  <ul>
+    <li>Compartir información personal</li>
+    <li>Hablar con desconocidos</li>
+    <li>Subir fotos sin pensar</li>
+    <li>Recibir mensajes incómodos</li>
+    <li>Publicar contenido ofensivo</li>
+  </ul>
+
+  <h3>🧠 Piensa antes de publicar</h3>
+
+  <p>¿Es seguro? ¿Lo verían tus padres? ¿Debe quedar en Internet?</p>
+
+  <hr>
+
+  <h3>🛡️ Cómo proteger tu huella digital</h3>
+
+  <img src="../img/seguridad1.jpg" alt="Seguridad digital">
+
+  <ul>
+    <li>No compartas datos personales</li>
+    <li>Usa contraseñas seguras</li>
+    <li>No aceptes desconocidos</li>
+    <li>Piensa antes de publicar</li>
+    <li>Respeta a los demás</li>
+  </ul>
+
+  <hr>
+
+  <!-- QUIZ -->
+  <h3>🎮 Actividad: ¿Verdadero o Falso?</h3>
+
+  <div id="quiz-huella">
+
+    <div class="pregunta">
+      <p>1. Todo lo que publico desaparece rápido.</p>
+      <button onclick="respuesta(this,false)">Verdadero</button>
+      <button onclick="respuesta(this,true)">Falso</button>
+    </div>
+
+    <div class="pregunta">
+      <p>2. Mi huella digital puede afectar mi futuro.</p>
+      <button onclick="respuesta(this,true)">Verdadero</button>
+      <button onclick="respuesta(this,false)">Falso</button>
+    </div>
+
+    <div class="pregunta">
+      <p>3. Dar “me gusta” también deja huella digital.</p>
+      <button onclick="respuesta(this,true)">Verdadero</button>
+      <button onclick="respuesta(this,false)">Falso</button>
+    </div>
+
+    <div class="pregunta">
+      <p>4. Solo lo que publico forma mi huella digital.</p>
+      <button onclick="respuesta(this,false)">Verdadero</button>
+      <button onclick="respuesta(this,true)">Falso</button>
+    </div>
+
+  </div>
+
+  <br>
+
+  <button onclick="mostrarResultado()">Ver resultado</button>
+  <p id="resultadoQuiz"></p>
+
+  <hr>
+
+  <div class="mensaje-final">
+  <h3>🌟 Mensaje final</h3>
+
+  <p>
+    Tu huella digital es importante. Piensa antes de publicar,
+    cuida tu información y respeta a los demás.
+  </p>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+  <p>Proyecto TIC - Ciudadanía Digital</p>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

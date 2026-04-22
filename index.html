@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudadanía Digital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>
+    <span class="globo-wrapper">
+      <span class="globo">🌐</span>
+    </span>
+    Ciudadanía Digital
+  </h1>
+
+  <p>Aprendemos a usar Internet de forma responsable</p>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <ul>
+    <li><a href="#" onclick="iniciarExperiencia(); return false;">Inicio</a></li>
+
+    <li><a href="pages/seguridad-digital.html">Seguridad</a></li>
+    <li><a href="pages/redes-sociales.html">Redes Sociales</a></li>
+    <li><a href="pages/privacidad.html">Privacidad</a></li>
+    <li><a href="pages/ciberbullying.html">Ciberbullying</a></li>
+    <li><a href="pages/huella-digital.html">Huella Digital</a></li>
+    <li><a href="pages/noticias.html">Noticias</a></li>
+    <li><a href="pages/quiz.html">Quiz</a></li>
+    <li><a href="pages/contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="card">
+
+    <h2>👋 Bienvenidos a la Ciudadanía Digital</h2>
+
+    <p>
+      La ciudadanía digital es la forma en que nos comportamos, aprendemos y nos relacionamos en Internet.
+      Es importante proteger nuestra información, respetar a los demás y construir una identidad digital responsable.
+    </p>
+
+    <div class="imagenes-inicio">
+
+      <figure>
+        <img src="img/seguridad.jpg" alt="Seguridad digital">
+        <figcaption>🔐 Seguridad en Internet</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/huella.jpg" alt="Huella digital">
+        <figcaption>👣 Huella digital</figcaption>
+      </figure>
+
+    </div>
+
+    <div style="text-align:center; margin-top:25px;">
+      <button class="btn-inicio" onclick="iniciarExperiencia()">
+        🚀 Comenzar experiencia digital
+      </button>
+    </div>
+
+  </section>
+</main>
+
+
+<div id="modalVideo" class="modal oculto">
+
+  <div class="modal-contenido">
+
+    <h2>🎥 ¿Qué es la ciudadanía digital?</h2>
+
+    <!-- ✔ VIDEO LOCAL -->
+    <video width="100%" height="315" controls>
+      <source src="img/Ciudadania.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+
+    <p style="font-size:12px; text-align:center;">
+      Autor: AGESIC | Fuente original: https://www.youtube.com/watch?v=QAiN164WQ-o
+    </p>
+
+    <hr>
+
+    <h3>🧠 Mini preguntas</h3>
+
+    <p>1. ¿La ciudadanía digital es usar Internet responsablemente?</p>
+    <button onclick="miniRespuesta(this,true)">Sí</button>
+    <button onclick="miniRespuesta(this,false)">No</button>
+
+    <p>2. ¿Debemos respetar a los demás en Internet?</p>
+    <button onclick="miniRespuesta(this,true)">Sí</button>
+    <button onclick="miniRespuesta(this,false)">No</button>
+
+    <p id="miniResultado"></p>
+
+    <br>
+
+    <button onclick="cerrarExperiencia()">👉 Continuar al sitio</button>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>Proyecto TIC - Ciudadanía Digital</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

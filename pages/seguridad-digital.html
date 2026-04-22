@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguridad Digital</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🔒 Seguridad Digital</h1>
+  <p>Cuidarnos cuando usamos Internet</p>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="seguridad-digital.html">Seguridad</a></li>
+    <li><a href="redes-sociales.html">Redes Sociales</a></li>
+    <li><a href="privacidad.html">Privacidad</a></li>
+    <li><a href="ciberbullying.html">Ciberbullying</a></li>
+    <li><a href="huella-digital.html">Huella Digital</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section class="card">
+    <h2>🧠 ¿Qué es la seguridad digital?</h2>
+    <img src="../img/Seguridad2.gif" alt="Seguridad digital">
+
+    <p>
+      La seguridad digital es una parte importante de la ciudadanía digital.
+      Significa aprender a cuidarnos cuando usamos Internet, celulares, tablets o computadoras.
+    </p>
+
+    <p>
+      Internet nos ofrece muchas oportunidades, pero también puede presentar riesgos si no lo usamos con cuidado.
+    </p>
+  </section>
+
+  <section class="card">
+    <h3>🌍 ¿Por qué es importante?</h3>
+
+    <img src="../img/riesgos.jpg" alt="Riesgos en internet">
+
+    <ul>
+      <li>✔️ Proteger los datos personales</li>
+      <li>✔️ Evitar engaños o riesgos</li>
+      <li>✔️ Mantener cuentas seguras</li>
+      <li>✔️ Usar Internet con confianza</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h3>⚠️ Posibles riesgos</h3>
+
+    <ul>
+      <li>🔴 Mensajes de desconocidos</li>
+      <li>🔴 Compartir información personal</li>
+      <li>🔴 Contraseñas débiles</li>
+      <li>🔴 Archivos peligrosos</li>
+      <li>🔴 Ciberacoso</li>
+      <li>🔴 Páginas no seguras</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h3>🔒 Cómo protegerte</h3>
+
+    <img src="../img/proteccion.jpg" alt="Protección digital">
+
+    <h4>Datos personales</h4>
+    <ul>
+      <li>Nombre completo</li>
+      <li>Dirección</li>
+      <li>Teléfono</li>
+      <li>Escuela</li>
+      <li>Contraseñas</li>
+      <li>Fotos personales</li>
+    </ul>
+
+    <h4>Contraseñas seguras</h4>
+    <p>✔ Letras + números + símbolos</p>
+    <p>✔ Ejemplo: M1Cl@v3Segur@</p>
+
+    <h4>Descargas seguras</h4>
+    <ul>
+      <li>✔ Sitios confiables</li>
+      <li>✔ No abrir archivos desconocidos</li>
+      <li>✔ Preguntar a un adulto</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h3>📱 Uso responsable</h3>
+
+    <img src="../img/responsable.jpg" alt="Uso responsable">
+
+    <ul>
+      <li>✔ Bloquear pantalla</li>
+      <li>✔ Actualizar dispositivos</li>
+      <li>✔ Usar antivirus</li>
+    </ul>
+
+    <h4>Comportamiento en línea</h4>
+    <ul>
+      <li>✔ Respetar a otros</li>
+      <li>✔ No insultar</li>
+      <li>✔ No difundir rumores</li>
+    </ul>
+
+    <h4>Reglas básicas</h4>
+    <ul>
+      <li>✔ No compartir datos personales</li>
+      <li>✔ Pensar antes de publicar</li>
+      <li>✔ No aceptar desconocidos</li>
+    </ul>
+  </section>
+
+  
+  <section class="card">
+
+    <h3>🎮 Actividad: Verdadero o Falso</h3>
+    <p>Responde las siguientes preguntas:</p>
+
+    <div id="quiz">
+
+      <div class="pregunta">
+        <p>1. La seguridad digital ayuda a proteger tu información.</p>
+        <button onclick="respuesta(this,true)" data-correcto="true">Verdadero</button>
+        <button onclick="respuesta(this,false)">Falso</button>
+      </div>
+
+      <div class="pregunta">
+        <p>2. Es seguro compartir tu contraseña.</p>
+        <button onclick="respuesta(this,false)">Verdadero</button>
+        <button onclick="respuesta(this,true)" data-correcto="true">Falso</button>
+      </div>
+
+      <div class="pregunta">
+        <p>3. Debo descargar solo archivos de sitios confiables.</p>
+        <button onclick="respuesta(this,true)" data-correcto="true">Verdadero</button>
+        <button onclick="respuesta(this,false)">Falso</button>
+      </div>
+
+      <div class="pregunta">
+        <p>4. Internet nunca tiene riesgos.</p>
+        <button onclick="respuesta(this,false)">Verdadero</button>
+        <button onclick="respuesta(this,true)" data-correcto="true">Falso</button>
+      </div>
+
+      <div class="pregunta">
+        <p>5. Debo pensar antes de hacer clic o publicar.</p>
+        <button onclick="respuesta(this,true)" data-correcto="true">Verdadero</button>
+        <button onclick="respuesta(this,false)">Falso</button>
+      </div>
+
+    </div>
+
+    <button onclick="mostrarResultado()">Ver resultado</button>
+    <p id="resultadoQuiz"></p>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>Proyecto TIC - Ciudadanía Digital</p>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 Quiz de Ciudadanía Digital</h1>
+  <p>¡Pon a prueba lo que aprendiste!</p>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+
+<nav id="nav">
+  <ul>
+    <li><a href="../index.html">Inicio</a></li>
+    <li><a href="seguridad-digital.html">Seguridad</a></li>
+    <li><a href="redes-sociales.html">Redes Sociales</a></li>
+    <li><a href="privacidad.html">Privacidad</a></li>
+    <li><a href="ciberbullying.html">Ciberbullying</a></li>
+    <li><a href="huella-digital.html">Huella Digital</a></li>
+    <li><a href="noticias.html">Noticias</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="card">
+
+    <h2>🧠 Responde las preguntas</h2>
+
+    
+    <input 
+      type="text" 
+      id="nombreUsuario" 
+      placeholder="Escribe tu nombre"
+      style="margin-bottom:15px; padding:10px; width:100%; border-radius:6px; border:1px solid #ccc;"
+    >
+
+    
+    <div id="quiz-principal">
+
+      <div class="pregunta">
+        <p>1. ¿Debes compartir tu contraseña con amigos?</p>
+        <button onclick="respuesta(this,false)">Sí</button>
+        <button onclick="respuesta(this,true)" data-correcto="true">No</button>
+      </div>
+
+      <div class="pregunta">
+        <p>2. ¿Es importante pensar antes de publicar?</p>
+        <button onclick="respuesta(this,true)" data-correcto="true">Sí</button>
+        <button onclick="respuesta(this,false)">No</button>
+      </div>
+
+      <div class="pregunta">
+        <p>3. ¿Es seguro hablar con desconocidos en Internet?</p>
+        <button onclick="respuesta(this,false)">Sí</button>
+        <button onclick="respuesta(this,true)" data-correcto="true">No</button>
+      </div>
+
+      <div class="pregunta">
+        <p>4. ¿Debes descargar archivos de cualquier página?</p>
+        <button onclick="respuesta(this,false)">Sí</button>
+        <button onclick="respuesta(this,true)" data-correcto="true">No</button>
+      </div>
+
+      <div class="pregunta">
+        <p>5. ¿La seguridad digital te ayuda a protegerte?</p>
+        <button onclick="respuesta(this,true)" data-correcto="true">Sí</button>
+        <button onclick="respuesta(this,false)">No</button>
+      </div>
+
+    </div>
+
+    <br>
+
+    
+    <button onclick="mostrarResultado()">Ver resultado</button>
+    <button onclick="reiniciarQuiz()">Reiniciar</button>
+
+    <p id="resultadoQuiz"></p>
+
+    
+    <h3>🏆 Mejores resultados</h3>
+    <ul id="listaResultados"></ul>
+
+    <button onclick="borrarRanking()">🗑 Borrar resultados</button>
+
+  </section>
+</main>
+
+<footer>
+  <p>Proyecto TIC - Ciudadanía Digital</p>
+</footer>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
